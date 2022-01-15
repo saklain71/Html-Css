@@ -1,0 +1,257 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(253, 238, 238);
+}
+
+/* -------
+CAMERA DETAILS 
+-------------*/
+
+.camera-detail{
+    display: flex;
+    margin-top: 100px;
+   
+}
+h3{
+    margin-left: 100px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.camera{
+    width:40%;
+    margin-left: 100px;
+
+}
+.camera img{
+    width: 70%;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 30px;
+
+    
+}
+
+/* BUTTON */
+
+.button{
+    padding: 10px 40px;
+    border-radius: 30px;
+    color: white ;
+    font-size: 15px;
+    background-color:mediumvioletred;
+    border: white; 
+}
+.fas{
+    margin-left: 10px;
+}
+#camera-size{
+    background-color: white;
+    width: 400px;
+    height: 350px;
+    border-radius: 200px;
+    border: 1px solid rgb(235, 232, 230);
+    transition: transform 2s;
+}
+#camera-size:hover{
+    transform: scale(1.25) rotate(270deg);
+}
+
+/* ---------
+      IMAGES
+ ----------- */
+
+
+ .container{
+     margin-top: 100px;
+ }
+
+ .third-title{
+     text-align: center;
+    font-size: 24px;
+    font-family: 'poppins';
+   
+ }
+ .image-boxes{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 15px;
+    
+ }
+ .image img{
+    width: 30%;
+ }
+
+ .images{
+     border: 1px solid white;
+     background-color: white;
+     border-radius: 10px;
+     padding: 5px 5px 5px 5px;
+ }
+
+
+ .image img{
+     width: 375px;
+     height: 200px;
+     border-radius: 10px;
+ }
+ .full-stars{
+    color: orangered;
+
+
+}
+
+#ast-star{
+    margin-left: 5px;
+}
+
+ .article{
+     display: flex;
+     margin-top: 100px;
+     font-family: 'Poppins', sans-serif;
+     gap: 10%;
+     
+     
+ }
+
+ article .article-descrip{
+     width: 50%;
+     margin-left: 150px;
+     align-items: center;
+     margin-top: 100px;
+
+
+ }
+ .opinion{
+     margin-left: 0%;
+     margin-bottom: 50px;
+ }
+ .article-button, .input{
+    padding: 10px 40px;
+    border-radius: 30px;
+    color: white ;
+    font-size: 15px;
+    background-color:mediumvioletred;
+    border: white; 
+ }
+.input{
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* /////// Footer ////// */
+
+footer{
+    width: 1420px;
+    height: 200px;
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(7, 7, 56);
+    margin-top: 200px;
+ 
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+footer p{
+    font-size: 10px;
+    color: rgb(184, 173, 173);
+}
+footer .logos img{
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    color: rgb(191, 191, 243);
+   
+}
+footer .logos a{
+    white-space: 10px;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+/* ------
+ MEDIA QUERY
+ --------- */
+
+ /* Mobile */
+
+
+ @media only screen and (max-width: 668px) {
+
+
+ 
+     .main{
+         display: grid;
+         margin: 0%;
+         padding: 0%;
+        
+     }
+    
+     .container{
+         width: 100%;
+     }
+
+      .camera-detail{
+        flex-direction: column;
+          gap: 10px;
+         
+         
+      }
+
+    .image-boxes,.article{
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     margin-top: 10px;
+    }
+
+.article .input{
+  margin-top: 10px;
+
+}
+
+.footer{  
+
+}
+
+}
+
+    
+
+
+/* responsive for tablet */
+
+@media only screen and (min-width: 668px) and (max-width:992px) {
+    
+    .main{
+       flex-direction: column;
+       width: 100%;
+
+    }
+    .image-boxes{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+ 
